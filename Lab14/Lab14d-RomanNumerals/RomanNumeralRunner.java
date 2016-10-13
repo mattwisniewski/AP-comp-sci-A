@@ -1,4 +1,13 @@
-
+/**
+ * RomanNumeralRunner.java  10/7/2016
+ *
+ * @author - Matthew Wisniewski
+ * @author - Period 4
+ * @author - Id 859732
+ *
+ * @author - I received help no one
+ *
+*/
 
 public class RomanNumeralRunner
 {

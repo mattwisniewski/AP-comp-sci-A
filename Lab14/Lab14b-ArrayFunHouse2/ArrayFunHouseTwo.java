@@ -25,7 +25,7 @@ public class ArrayFunHouseTwo
 		}
 		return true;
 	}
-	
+
 	//Returns true if all numbers in numArray are decreasing
 	public static boolean goingDown(int[] numArray)
 	{
@@ -40,7 +40,7 @@ public class ArrayFunHouseTwo
 		}
 		return true;
 	}
-	
+
 	//Creates a new array with all numbers greater than val
 	public static int[] greaterThan(int[] numArray, int len, int val)
 	{

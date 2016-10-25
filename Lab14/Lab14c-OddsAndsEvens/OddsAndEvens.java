@@ -11,6 +11,7 @@
 
 public class OddsAndEvens
 {
+	//Counts the number of Odds or evens based off of the boolean(True=Odd,False=Even)
 	private static int countEm(int[] array, boolean odd)
 	{
 		int length = 0;
@@ -36,7 +37,7 @@ public class OddsAndEvens
 		}
 		return length;
 	}
-
+	//Gets the evens and returns an array with all the evens
 	public static int[] getAllEvens(int[] array)
 	{
 		int count = 0;
@@ -51,7 +52,7 @@ public class OddsAndEvens
 		}
 		return newray;
 	}
-
+	//Gets the odds and returns an array with all the odds
 	public static int[] getAllOdds(int[] array)
 	{
 		int count = 0;

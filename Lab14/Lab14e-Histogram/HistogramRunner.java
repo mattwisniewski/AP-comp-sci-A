@@ -11,26 +11,32 @@
 
 public class HistogramRunner
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
+		//Sets the object
+		//Formats and prints
 		int[] one = {1, 5, 3, 4, 5, 5, 5, 4, 3, 2, 5, 5, 5, 3};
-		for(int i = 0; i <= 9; i++)
+		Histogram test = new Histogram(one, 0);
+		for (int i = 0; i <= 9; i++)
 		{
-			System.out.println(i + " = " + Histogram.getCount(one, i));
+			test.setHistogram(one, i);
+			System.out.println(test);
 		}
-		
+
 		int[] two = {2, 3, 4, 5, 6, 7, 8, 9, 0, 2, 3, 5, 6, 8, 8, 8, 9, 4, 5};
 		System.out.println("\n");
-		for(int i = 0; i <= 9; i++)
+		for (int i = 0; i <= 9; i++)
 		{
-			System.out.println(i + " = " + Histogram.getCount(two, i));
+			test.setHistogram(two, i);
+			System.out.println(test);
 		}
-		
+
 		int[] three = {2, 3, 4, 5, 6, 7, 8, 2, 0, 2, 3, 5, 6, 8, 8, 8, 9, 4, 5};
 		System.out.println("\n");
-		for(int i = 0; i <= 9; i++)
+		for (int i = 0; i <= 9; i++)
 		{
-			System.out.println(i + " = " + Histogram.getCount(three, i));
+			test.setHistogram(three, i);
+			System.out.println(test);
 		}
 	}
 }

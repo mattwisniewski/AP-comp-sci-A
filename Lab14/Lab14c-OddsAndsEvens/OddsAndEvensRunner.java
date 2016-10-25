@@ -14,6 +14,7 @@ public class OddsAndEvensRunner
 {
 	public static void main(String[] args)
 	{
+		//Formats and prints the evens
 		int[] one = {2, 4, 6, 8, 10, 12, 14};
 		int[] two = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 		int[] three = {2, 10, 20, 21, 23, 24, 40, 55, 60, 61};

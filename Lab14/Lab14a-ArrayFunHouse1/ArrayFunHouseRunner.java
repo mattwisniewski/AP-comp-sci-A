@@ -14,6 +14,7 @@ public class ArrayFunHouseRunner
 {
 	public static void main(String[] args)
 	{
+		//Sets the array to the given array
 		int[] one = {7, 4, 10, 0, 1, 7, 6, 5, 3, 2, 9, 7};
 		System.out.println(Arrays.toString(one));
 		System.out.println("sum of spots 3-6  =  " + ArrayFunHouse.getSum(one, 3, 6));
@@ -23,7 +24,7 @@ public class ArrayFunHouseRunner
 		System.out.println("# of 7s  =  " + ArrayFunHouse.getCount(one, 7));
 		System.out.println("new array with all 7s removed = " + Arrays.toString(ArrayFunHouse.removeVal(one, 7)));
 		System.out.println("# of 7s  =  " + ArrayFunHouse.getCount(ArrayFunHouse.removeVal(one, 7), 7));
-
+		//Sets the array to the given array
 		int[] two = {7, 4, 2, 7, 3, 4, 6, 7, 8, 9, 7, 0, 10, 7, 0, 1, 7, 6, 5, 7, 3, 2, 7, 9, 9, 8, 7};
 		System.out.println("\n\n" + Arrays.toString(two));
 		System.out.println("sum of spots 3-6  =  " + ArrayFunHouse.getSum(two, 3, 16));

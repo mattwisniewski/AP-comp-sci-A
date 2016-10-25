@@ -11,8 +11,10 @@
 
 public class RomanNumeralRunner
 {
-	public static void main( String args[] )
+	public static void main(String[] args)
 	{
+		//Sets the object
+		//Prints with correct formatting
 		RomanNumeral test = new RomanNumeral(10);
 		System.out.println("10 is " + test.toString());
 
@@ -46,7 +48,7 @@ public class RomanNumeralRunner
 		test.setRoman("XX");
 		System.out.println("XX is " + test.getNumber() + "\n");
 
-		test.setRoman("XLIX");
-		System.out.println("XLIX is " + test.getNumber() + "\n");
+		test.setRoman("XXXVIII");
+		System.out.println("XXXVIII is " + test.getNumber() + "\n");
 	}
 }

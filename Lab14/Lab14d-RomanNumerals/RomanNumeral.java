@@ -5,26 +5,26 @@
  * @author - Period 4
  * @author - Id 859732
  *
- * @author - I received help no one
+ * @author - I received help Ryan Radloff
  *
 */
 
 public class RomanNumeral
 {
-	private Integer number;
+	//Variables and arrays
+	private int number;
 	private String roman;
-
-	private final static int[] numbers = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
-	private final static String[] letters = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
-
+	private int[] numbers = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+	private String[] letters = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+	//Constructor
 	public RomanNumeral(String str)
 	{
-		String roman = "";
+		roman = str;
 	}
 
 	public RomanNumeral(int orig)
 	{
-		int number = 0;
+		number = orig;
 	}
 
 	public void setNumber(int num)
@@ -37,11 +37,22 @@ public class RomanNumeral
 		roman = rom;
 	}
 
+	//Converts a string of roman to an int
 	public int getNumber()
 	{
-		return number;
+		//Loops through the string, coverts to ints
+		int sum = 0;
+		for (int i = 0; i < letters.length; i++)
+		{
+			while (roman.indexOf(letters[i]) == 0)
+			{
+				sum += numbers[i];
+				roman = roman.substring(letters[i].length());
+			}
+		}
+		return sum;
 	}
-	
+	//Converts an int to a string of roman
 	public String getRoman()
 	{
 		String strroman = "";
@@ -50,12 +61,12 @@ public class RomanNumeral
 			while (number >= numbers[i])
 			{
 				strroman += letters[i];
-				number = number - numbers[i];
+				number -= numbers[i];
 			}
 		}
 		return strroman;
 	}
-	
+	//Formats and returns the string romans
 	public String toString()
 	{
 		return getRoman() + "\n";
